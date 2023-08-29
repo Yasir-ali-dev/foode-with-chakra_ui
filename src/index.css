@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  font-size: calc(1vw + .4rem);
+  box-sizing: border-box;
+  --green--color:#39DB4A;
+
+}
+*,
+::after,
+::before{
+  box-sizing: inherit;
+}
+.chakra-ui-light{
+  background-color:#ffffff;
+  /* color: blue; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.information > * {
+  margin-bottom: .89em;
+}
+
+.food{
+  color: var(--green--color);
+}
+.btn{
+  background-color: var(--green--color) !important;
+}
+
+.image-background{
+  background-color: var(--green--color) ; 
+    border-radius: 100%;
+    width: 31.37em;
+    height: 31.37em;
+    top: 3em;
+    right: -1em;
+    position: relative;
+}
+
+.main-image{
+  position: absolute;
+  width: 47rem;
+  top: -5px;
+}
+
+.category{
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+
+  box-shadow: 6px 6px 12px grey;
+  padding: 1.3em 3.2em;
+  align-items: center;
+}
+.category > * + *{
+  margin-top: .5em;
+}
+
+.category > div{
+  width: 153px;
+  height: 153px;
+  border-radius: 50%;
+  background-color: #C1F1C6;  
+}
+
+.category > div > img{
+  margin: 20px auto;
 }
