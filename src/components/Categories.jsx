@@ -3,7 +3,8 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <Stack display={"flex"} mb={"3em"} pb={"1em"} flexDirection={"column"} alignItems={"center"} spacing={3}>
+      <Stack mb={"3em"} pb={2}>
+        <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <Text 
             textTransform={"uppercase"} 
             fontSize={"xl"} color={"red.600"} 
@@ -15,6 +16,8 @@ const Categories = () => {
             fontWeight={"bold"} 
             fontSize={"4xl"}
         >popular categories</Text>
+
+        </Box>
         <Box 
             display={"grid"} 
             gridTemplateRows={"1fr"} 
