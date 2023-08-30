@@ -7,6 +7,8 @@ import Categories from "./components/Categories";
 import Menu from "./components/Menu";
 import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Menu />
       <Testimonials />
       <Services />
+      <ContactUs />
+      <Footer />
     </Container>
   );
 }
