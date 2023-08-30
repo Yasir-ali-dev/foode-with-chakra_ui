@@ -118,12 +118,30 @@
 
 .services-left {
   flex: 1;
+  padding: 0 .5em;
+  align-self: center;
 }
 
-.services-left > * + *{
-  margin-top: .8em;
+.services-left > *{
+  margin-bottom: .8em;
 }
 
 .services-right{
   flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  grid-template-rows: repeat(2 ,1fr);
+  align-items: center;
+  grid-gap: .8em;
+}
+.service{
+  border-radius: 30px;
+  display: flex;
+  row-gap: .6em;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 5px 5px 9px grey;
+  justify-content: center;
+  padding: 2.2em 1.4em;
 }
