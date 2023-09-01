@@ -19,10 +19,7 @@ const Categories = () => {
 
         </Box>
         <Box 
-            display={"grid"} 
-            gridTemplateRows={"1fr"} 
-            gridTemplateColumns={"repeat(4,1fr)"}
-            gridColumnGap={"1.2em"}
+            className='category-container'
             mt={"2.1em"}
         >
             <div className='category'>

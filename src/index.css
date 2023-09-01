@@ -25,20 +25,26 @@
   background-color: var(--green--color) !important;
 }
 
-.image-background{
-  background-color: var(--green--color) ; 
-    border-radius: 100%;
-    width: 31.37em;
-    height: 31.37em;
-    top: 3em;
-    right: -1em;
-    position: relative;
+.main-image-background{
+  transform: scale(0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: -20px;
 }
 
 .main-image{
   position: absolute;
-  width: 47rem;
-  top: -5px;
+  z-index: 1;
+  transform: scale(.9);
+  top: -50px;
+  right: 5px;
+}
+.category-container{
+  padding: 0.1em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr));
+  grid-column-gap: 1.2em ;
 }
 
 .category{

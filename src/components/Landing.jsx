@@ -3,10 +3,14 @@ import React from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
 const Landing = () => {
   return( 
-    <Stack flexDirection={"row"} display={"flex"} mb={"1.5em"} height={"100vh"} >
+    <Stack 
+      flexDirection={"row"} 
+      display={"flex"} 
+      mb={"1.5em"} 
+      height={"100vh"} 
+    >
       <Box 
         flex={1} 
-
         p={".1em"}
         pt={"6em"}     
         className='information'
@@ -24,11 +28,21 @@ const Landing = () => {
             </Button>
         </ButtonGroup>
       </Box >  
+
       <Box display={"flex"} flex={1} position={"relative"}>
-        <Box className='image-background' >
+          <Image 
+            src={require("../assets/Intersect.png")} 
+            alt='photo'   
+            objectFit={"cover"} 
+            className='main-image'
+          />
+          <Image 
+            src={require("../assets/Rectangle9.png")} 
+            objectFit={"cover"} 
+            alt='background'
+            className='main-image-background'
+          />
         </Box>
-          <Image src={require("../assets/Intersect.png")} alt='photo' objectFit={"cover"} className='main-image'/>
-      </Box>
     </Stack>
   )
 }

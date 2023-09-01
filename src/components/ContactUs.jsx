@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <Box className='contactUs' py={2} my={"3em"}>
+    <Box className='contactUs' py={2} my={"3.5em"}>
 
       <div className="links">
         <Heading fontSize={"2xl"} >Foode</Heading>
